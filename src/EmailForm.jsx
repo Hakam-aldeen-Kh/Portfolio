@@ -1,5 +1,6 @@
 import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
+import Swal from 'sweetalert2'
 
 export const EmailForm = () => {
   const [data, setData] = useState({
@@ -9,6 +10,19 @@ export const EmailForm = () => {
     message: "",
   });
   const form = useRef();
+
+
+  const Toast = Swal.mixin({
+    toast: true,
+    position: "top-end",
+    showConfirmButton: false,
+    timer: 3000,
+    timerProgressBar: true,
+    didOpen: (toast) => {
+      toast.onmouseenter = Swal.stopTimer;
+      toast.onmouseleave = Swal.resumeTimer;
+    }
+  });
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -27,7 +41,12 @@ export const EmailForm = () => {
         }
       )
       .then((response) => {
-        console.log("Email sent successfully!", response);
+        Toast.fire({
+          icon: "success",
+          color : "#fff", 
+          background: "#1e9fe3",
+          title: "Email sent successfully!"
+        });
         setData({
           email: "",
           name: "",
@@ -36,7 +55,10 @@ export const EmailForm = () => {
         });
       })
       .catch((error) => {
-        console.error("Error sending email:", error);
+        Toast.fire({
+          icon: "error",
+          title: `Error sending email: ${error}`
+        });
       });
   };
 
@@ -47,6 +69,7 @@ export const EmailForm = () => {
       [name]: value,
     });
   };
+
 
   return (
     <div className="m-auto px-4 mt-4 mb-8" id="connectMe">

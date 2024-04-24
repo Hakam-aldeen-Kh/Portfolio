@@ -35,7 +35,7 @@ function App() {
       <header
         className={`${
           scrolling ? "border-b border-gray-900" : ""
-        }  fixed left-0 right-0 top-[-14px] z-20`}
+        }  fixed left-0 right-0 top-[-14px] sm:top-[0px] z-20`}
         id="home"
       >
         <div className="container m-auto px-4 py-6 max-w-4xl bg-black">
