@@ -57,6 +57,8 @@ export const EmailForm = () => {
       .catch((error) => {
         Toast.fire({
           icon: "error",
+          color : "#fff", 
+          background: "#1e9fe3",
           title: `Error sending email: ${error}`
         });
       });
