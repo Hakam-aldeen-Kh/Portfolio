@@ -35,7 +35,7 @@ function App() {
       <header
         className={`${
           scrolling ? "border-b border-gray-900" : ""
-        }  fixed left-0 right-0 top-0 z-20`}
+        }  fixed left-0 right-0 top-[-14px] z-20`}
         id="home"
       >
         <div className="container m-auto px-4 py-6 max-w-4xl bg-black">
@@ -390,7 +390,6 @@ function App() {
                   GitHub
                 </p>
               </div>
-
               <div>
                 <p className="font-bold before:w-4 before:h-4 before:bg-gradient-to-t before:from-blue-500 before:to-cyan-500 before:block before:rounded-full before:mt-1 before:-left-6 before:absolute relative left-5">
                   Responsive Design
