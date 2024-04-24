@@ -318,7 +318,7 @@ function App() {
               <div className="mt-8">
                 <div className="flex justify-between items-center">
                   <h2 className="font-semibold">
-                    <i class="fa-brands fa-css3 me-3 text-[#2965f1] text-2xl"></i>
+                    <i className="fa-brands fa-css3 me-3 text-[#2965f1] text-2xl"></i>
                     CSS
                   </h2>
                   <p className="text-gray-500">90%</p>
@@ -328,7 +328,7 @@ function App() {
               <div className="mt-8">
                 <div className="flex justify-between items-center">
                   <h2 className="font-semibold">
-                    <i class="fa-brands fa-bootstrap me-3 text-[#702cf6] text-2xl"></i>
+                    <i className="fa-brands fa-bootstrap me-3 text-[#702cf6] text-2xl"></i>
                     Bootstrap 5
                   </h2>
                   <p className="text-gray-500">70%</p>
@@ -338,7 +338,7 @@ function App() {
               <div className="mt-8">
                 <div className="flex justify-between items-center">
                   <h2 className="font-semibold">
-                    <i class="fa-brands fa-js me-3 text-[#f7df1e] text-2xl"></i>
+                    <i className="fa-brands fa-js me-3 text-[#f7df1e] text-2xl"></i>
                     JavaScript
                   </h2>
                   <p className="text-gray-500">85%</p>
@@ -348,7 +348,7 @@ function App() {
               <div className="mt-8">
                 <div className="flex justify-between items-center">
                   <h2 className="font-semibold">
-                    <i class="fa-brands fa-react me-3 text-[#00d8ff] text-2xl"></i>
+                    <i className="fa-brands fa-react me-3 text-[#00d8ff] text-2xl"></i>
                     React Js
                   </h2>
                   <p className="text-gray-500">75%</p>
@@ -368,7 +368,7 @@ function App() {
               <div className="mt-8">
                 <div className="flex justify-between items-center">
                   <h2 className="font-semibold">
-                    <i class="fa-brands fa-git-alt me-3 text-[#fc6d26] text-2xl"></i>
+                    <i className="fa-brands fa-git-alt me-3 text-[#fc6d26] text-2xl"></i>
                     Git
                   </h2>
                   <p className="text-gray-500">75%</p>
