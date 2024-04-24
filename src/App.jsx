@@ -464,7 +464,7 @@ function App() {
         {/*email form*/}
       </main>
       <footer>
-        <div className="container m-auto flex justify-between px-4 py-6">
+        <div className="container m-auto flex justify-evenly px-4 py-6">
           <div>
             <p className="text-gray-300 text-sm">Hakam Aldeen Alkadraa</p>
           </div>
@@ -475,7 +475,7 @@ function App() {
                   href="https://www.linkedin.com/in/hakam-aldeen-kh/"
                   className="icon-linkedin text-3xl"
                 >
-                  <i className="fa-brands fa-linkedin me-5"></i>
+                  <i className="fa-brands fa-linkedin me-0 sm:me-5"></i>
                 </a>
               </li>
               <li>
