@@ -1,8 +1,9 @@
 import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
-import Swal from 'sweetalert2'
+import Swal from "sweetalert2";
 
 export const EmailForm = () => {
+  const [accept, setAccept] = useState(false);
   const [data, setData] = useState({
     email: "",
     name: "",
@@ -10,7 +11,6 @@ export const EmailForm = () => {
     message: "",
   });
   const form = useRef();
-
 
   const Toast = Swal.mixin({
     toast: true,
@@ -21,7 +21,7 @@ export const EmailForm = () => {
     didOpen: (toast) => {
       toast.onmouseenter = Swal.stopTimer;
       toast.onmouseleave = Swal.resumeTimer;
-    }
+    },
   });
 
   const sendEmail = (e) => {
@@ -43,9 +43,9 @@ export const EmailForm = () => {
       .then((response) => {
         Toast.fire({
           icon: "success",
-          color : "#fff", 
+          color: "#fff",
           background: "#1e9fe3",
-          title: "Email sent successfully!"
+          title: "Email sent successfully!",
         });
         setData({
           email: "",
@@ -57,9 +57,9 @@ export const EmailForm = () => {
       .catch((error) => {
         Toast.fire({
           icon: "error",
-          color : "#fff", 
+          color: "#fff",
           background: "#1e9fe3",
-          title: `Error sending email: ${error}`
+          title: `Error sending email: ${error}`,
         });
       });
   };
@@ -70,8 +70,17 @@ export const EmailForm = () => {
       ...data,
       [name]: value,
     });
+    if (
+      data.name === "" &&
+      data.subject === "" &&
+      data.message === "" &&
+      data.email === ""
+    ) {
+      setAccept(false);
+    } else {
+      setAccept(true);
+    }
   };
-
 
   return (
     <div className="m-auto px-4 mt-4 mb-8" id="connectMe">
@@ -138,8 +147,13 @@ export const EmailForm = () => {
             onChange={handleChange}
           ></textarea>
           <button
+            disabled={!accept}
             type="submit"
-            className=" w-full sm:w-[60%]  items-start bg-gradient-to-t from-blue-500 to-cyan-500 hover:from-blue-700 hover:to-cyan-700 text-white py-3 rounded-full"
+            className={`w-full sm:w-[60%] items-start text-white py-3 rounded-full ${
+              !accept
+                ? "bg-gradient-to-t from-gray-500 to-zinc-500"
+                : "bg-gradient-to-t from-blue-500 to-cyan-500 hover:from-blue-700 hover:to-cyan-700"
+            }`}
           >
             Send Message
           </button>
