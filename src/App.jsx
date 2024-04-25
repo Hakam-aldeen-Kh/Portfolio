@@ -31,7 +31,7 @@ function App() {
   }, []);
 
   return (
-    <div className="max-w-4xl m-auto relative">
+    <div className="max-w-4xl m-auto relative overflow-hidden">
       <header
         className={`${
           scrolling ? "border-b border-gray-900" : ""
@@ -137,7 +137,7 @@ function App() {
             <h2 className="text-2xl font-semibold">Projects</h2>
             <div className="flex flex-col sm:flex-row gap-10 mt-11">
               <div className="border border-gray-500 rounded-md p-5 flex-1">
-                <img src={ExamGate} className="w-full h-auto" />
+                <img src={ExamGate} className="w-full h-[30vh]" />
                 <h3 className="text-2xl font-semibold mt-8">Exam Gate</h3>
                 <p className="text-gray-400 text-sm mt-2">
                   Responsive Web Application Offers a Completed Automated Exam
@@ -156,7 +156,7 @@ function App() {
                 </div>
               </div>
               <div className="border border-gray-500 rounded-md p-5 flex-1">
-                <img src={Ecommerce} className="w-full h-auto" />
+                <img src={Ecommerce} className="w-full h-[30vh]" />
                 <h3 className="text-2xl font-semibold mt-8">
                   Basic E-commerce
                 </h3>
@@ -187,7 +187,7 @@ function App() {
             </div>
             <div className="flex flex-col sm:flex-row gap-10 mt-11">
               <div className="border border-gray-500 rounded-md p-5 flex-1">
-                <img src={Elzero} className="w-full h-auto" />
+                <img src={Elzero} className="w-full h-[30vh]" />
                 <h3 className="text-2xl font-semibold mt-8">Elzero Project</h3>
                 <p className="text-gray-400 text-sm mt-2">
                   Responsive HTML/CSS layout for landing page with animation
@@ -214,7 +214,7 @@ function App() {
                 </div>
               </div>
               <div className="border border-gray-500 rounded-md p-5 flex-1">
-                <img src={Bondi} className="w-full h-auto" />
+                <img src={Bondi} className="w-full h-[30vh]" />
                 <h3 className="text-2xl font-semibold mt-8">Bondi Project</h3>
                 <p className="text-gray-400 text-sm mt-2">
                   Responsive HTML/CSS Bootstrap layout for landing page and
@@ -244,7 +244,7 @@ function App() {
             </div>
             <div className="flex flex-col sm:flex-row gap-10 mt-11">
               <div className="border border-gray-500 rounded-md p-5 flex-1">
-                <img src={Kasper} className="w-full h-auto" />
+                <img src={Kasper} className="w-full h-[30vh]" />
                 <h3 className="text-2xl font-semibold mt-8">Kasper Project</h3>
                 <p className="text-gray-400 text-sm mt-2">
                   Responsive HTML/CSS layout for landing page
@@ -271,7 +271,7 @@ function App() {
                 </div>
               </div>
               <div className="border border-gray-500 rounded-md p-5 flex-1">
-                <img src={Leon} className="w-full h-auto" />
+                <img src={Leon} className="w-full h-[30vh]" />
                 <h3 className="text-2xl font-semibold mt-8">Leon Project</h3>
                 <p className="text-gray-400 text-sm mt-2">
                   Responsive HTML/CSS layout for landing page
@@ -464,7 +464,7 @@ function App() {
         {/*email form*/}
       </main>
       <footer>
-        <div className="container m-auto flex justify-evenly px-4 py-6">
+        <div className="container m-auto flex justify-evenly px-4 py-6 align-middle">
           <div>
             <p className="text-gray-300 text-sm">Hakam Aldeen Alkadraa</p>
           </div>
@@ -492,7 +492,7 @@ function App() {
       </footer>
       {scrolling && (
         <button
-          className="fixed block right-8 bottom-0 w-24"
+          className="fixed block right-[-20px] sm:right-8 bottom-0 w-24"
           onClick={() => {
             window.scrollTo(0, 0);
           }}
