@@ -6,6 +6,7 @@ import Bondi from "./assets/Bondi.png";
 import Elzero from "./assets/Elzero.png";
 import Leon from "./assets/Leon.png";
 import Redux from "./assets/redux-svgrepo-com.svg";
+import TypeScript from "./assets/typescript-icon-svgrepo-com.svg"
 import myPhoto from "./assets/myPhoto.png";
 import ArrowDown from "./assets/arrow-down.svg";
 import myCv from "./PDFs/HakamAldeenAlkadraaResume.pdf";
@@ -345,6 +346,16 @@ function App() {
                   <p className="text-gray-500">85%</p>
                 </div>
                 <span className="w-[85%] h-2 mt-2 bg-gradient-to-t from-blue-500 to-cyan-500 block rounded-md" />
+              </div>
+              <div className="mt-8">
+                <div className="flex justify-between items-center">
+                  <h2 className="font-semibold">
+                  <img src={TypeScript} className="w-6 inline-block pb-2 me-3 " />
+                    TypeScript
+                  </h2>
+                  <p className="text-gray-500">65%</p>
+                </div>
+                <span className="w-[65%] h-2 mt-2 bg-gradient-to-t from-blue-500 to-cyan-500 block rounded-md" />
               </div>
               <div className="mt-8">
                 <div className="flex justify-between items-center">
