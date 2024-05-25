@@ -1,6 +1,6 @@
 import "./App.css";
 import ExamGate from "./assets/Exam Gate.png";
-import Ecommerce from "./assets/E-commerce.png";
+import Ecommerce from "./assets/Ecommerce.png";
 import Kasper from "./assets/Kaspe.png";
 import Bondi from "./assets/Bondi.png";
 import Elzero from "./assets/Elzero.png";
@@ -137,6 +137,36 @@ function App() {
             <h2 className="text-2xl font-semibold">Projects</h2>
             <div className="flex flex-col sm:flex-row gap-10 mt-11">
               <div className="border border-gray-500 rounded-md p-5 flex-1">
+                <img src={Ecommerce} className="w-full h-[30vh]" />
+                <h3 className="text-2xl font-semibold mt-8">e-Commerce</h3>
+                <p className="text-gray-400 text-sm mt-2">
+                  Responsive React Js App with APIs about e-Commerce with
+                  autorotation system - wishlist for every user - cart allow you
+                  menage your cart - place order and display orders for every
+                  user.
+                </p>
+                <div className="flex justify-between gap-2 mt-12 items-end">
+                  <a
+                    href="https://e-comtype.vercel.app/"
+                    className="w-1/2"
+                    target="_blank"
+                  >
+                    <button className="w-full text-sm py-3 bg-gradient-to-t from-blue-500 rounded-full to-cyan-500 hover:from-blue-700 hover:to-cyan-700">
+                      Live preview
+                    </button>
+                  </a>
+                  <a
+                    href="https://github.com/Hakam-aldeen-Kh/eCommerce"
+                    className="w-1/2"
+                    target="_blank"
+                  >
+                    <button className="w-full text-sm py-3 border rounded-full hover:border-blue-500 hover:text-blue-500">
+                      Checkout github
+                    </button>
+                  </a>
+                </div>
+              </div>
+              <div className="border border-gray-500 rounded-md p-5 flex-1">
                 <img src={ExamGate} className="w-full h-[30vh]" />
                 <h3 className="text-2xl font-semibold mt-8">Exam Gate</h3>
                 <p className="text-gray-400 text-sm mt-2">
@@ -151,35 +181,6 @@ function App() {
                   >
                     <button className="w-full text-sm py-3 bg-gradient-to-t from-blue-500 rounded-full to-cyan-500 hover:from-blue-700 hover:to-cyan-700">
                       Live preview
-                    </button>
-                  </a>
-                </div>
-              </div>
-              <div className="border border-gray-500 rounded-md p-5 flex-1">
-                <img src={Ecommerce} className="w-full h-[30vh]" />
-                <h3 className="text-2xl font-semibold mt-8">
-                  Basic E-commerce
-                </h3>
-                <p className="text-gray-400 text-sm mt-2">
-                  Responsive React Js Store with APIs
-                </p>
-                <div className="flex justify-between gap-2 mt-12 items-end">
-                  <a
-                    href="https://basic-ecommerce.surge.sh/"
-                    className="w-1/2"
-                    target="_blank"
-                  >
-                    <button className="w-full text-sm py-3 bg-gradient-to-t from-blue-500 rounded-full to-cyan-500 hover:from-blue-700 hover:to-cyan-700">
-                      Live preview
-                    </button>
-                  </a>
-                  <a
-                    href="https://github.com/Hakam-aldeen-Kh/Basic-Ecommerce-React"
-                    className="w-1/2"
-                    target="_blank"
-                  >
-                    <button className="w-full text-sm py-3 border rounded-full hover:border-blue-500 hover:text-blue-500">
-                      Checkout github
                     </button>
                   </a>
                 </div>
