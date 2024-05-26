@@ -53,6 +53,7 @@ export const EmailForm = () => {
           subject: "",
           message: "",
         });
+        setAccept(false);
       })
       .catch((error) => {
         Toast.fire({
@@ -66,19 +67,21 @@ export const EmailForm = () => {
 
   const handleChange = (e) => {
     const { name, value } = e.target;
-    setData({
+    const newData = {
       ...data,
       [name]: value,
-    });
+    };
+    setData(newData);
+
     if (
-      data.name === "" &&
-      data.subject === "" &&
-      data.message === "" &&
-      data.email === ""
+      newData.email !== "" &&
+      newData.message !== "" &&
+      newData.name !== "" &&
+      newData.subject !== ""
     ) {
-      setAccept(false);
-    } else {
       setAccept(true);
+    } else {
+      setAccept(false);
     }
   };
 
@@ -150,9 +153,9 @@ export const EmailForm = () => {
             disabled={!accept}
             type="submit"
             className={`w-full sm:w-[60%] items-start text-white py-3 rounded-full ${
-              !accept
-                ? "bg-gradient-to-t from-gray-500 to-zinc-500"
-                : "bg-gradient-to-t from-blue-500 to-cyan-500 hover:from-blue-700 hover:to-cyan-700"
+              accept
+                ? "bg-gradient-to-t from-blue-500 to-cyan-500 hover:from-blue-700 hover:to-cyan-700"
+                : "bg-gradient-to-t from-gray-500 to-zinc-500"
             }`}
           >
             Send Message
