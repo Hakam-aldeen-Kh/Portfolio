@@ -9,7 +9,7 @@ import Redux from "./assets/redux-svgrepo-com.svg";
 import TypeScript from "./assets/typescript-icon-svgrepo-com.svg"
 import myPhoto from "./assets/myPhoto.png";
 import ArrowDown from "./assets/arrow-down.svg";
-import myCv from "./PDFs/HakamAldeenAlkadraaResume.pdf";
+import myCv from "./PDFs/Hakam aldeen Alkhadraa.pdf";
 import { useEffect, useState } from "react";
 import { EmailForm } from "./EmailForm.jsx";
 
@@ -142,7 +142,7 @@ function App() {
                 <h3 className="text-2xl font-semibold mt-8">e-Commerce</h3>
                 <p className="text-gray-400 text-sm mt-2">
                   Responsive React Js App with APIs about e-Commerce with
-                  autorotation system - wishlist for every user - cart allow you
+                  authentication system - wishlist for every user - cart allow you
                   menage your cart - place order and display orders for every
                   user.
                 </p>
