@@ -176,7 +176,7 @@ function App() {
                 </p>
                 <div className="flex mt-5 gap-2">
                   <a
-                    href="https://examgateperev.gensolv.no/"
+                    href="http://examgate.hostek.xyz"
                     target="_blank"
                     className="block w-full"
                   >
