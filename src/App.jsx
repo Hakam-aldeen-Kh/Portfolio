@@ -343,9 +343,9 @@ function App() {
                     <i className="fa-brands fa-js me-3 text-[#f7df1e] text-2xl"></i>
                     JavaScript
                   </h2>
-                  <p className="text-gray-500">85%</p>
+                  <p className="text-gray-500">80%</p>
                 </div>
-                <span className="w-[85%] h-2 mt-2 bg-gradient-to-t from-blue-500 to-cyan-500 block rounded-md" />
+                <span className="w-[80%] h-2 mt-2 bg-gradient-to-t from-blue-500 to-cyan-500 block rounded-md" />
               </div>
               <div className="mt-8">
                 <div className="flex justify-between items-center">
@@ -353,9 +353,9 @@ function App() {
                   <img src={TypeScript} className="w-6 inline-block pb-2 me-3 " />
                     TypeScript
                   </h2>
-                  <p className="text-gray-500">65%</p>
+                  <p className="text-gray-500">70%</p>
                 </div>
-                <span className="w-[65%] h-2 mt-2 bg-gradient-to-t from-blue-500 to-cyan-500 block rounded-md" />
+                <span className="w-[70%] h-2 mt-2 bg-gradient-to-t from-blue-500 to-cyan-500 block rounded-md" />
               </div>
               <div className="mt-8">
                 <div className="flex justify-between items-center">
