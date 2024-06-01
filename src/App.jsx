@@ -313,9 +313,9 @@ function App() {
                     <i className="fa-brands fa-html5 me-3 text-[#e34f26] text-2xl"></i>
                     HTML
                   </h2>
-                  <p className="text-gray-500">90%</p>
+                  <p className="text-gray-500">85%</p>
                 </div>
-                <span className="w-[90%] h-2 mt-2 bg-gradient-to-t from-blue-500 to-cyan-500 block rounded-md" />
+                <span className="w-[85%] h-2 mt-2 bg-gradient-to-t from-blue-500 to-cyan-500 block rounded-md" />
               </div>
               <div className="mt-8">
                 <div className="flex justify-between items-center">
@@ -323,9 +323,9 @@ function App() {
                     <i className="fa-brands fa-css3 me-3 text-[#2965f1] text-2xl"></i>
                     CSS
                   </h2>
-                  <p className="text-gray-500">90%</p>
+                  <p className="text-gray-500">85%</p>
                 </div>
-                <span className="w-[90%] h-2 mt-2 bg-gradient-to-t from-blue-500 to-cyan-500 block rounded-md" />
+                <span className="w-[85%] h-2 mt-2 bg-gradient-to-t from-blue-500 to-cyan-500 block rounded-md" />
               </div>
               <div className="mt-8">
                 <div className="flex justify-between items-center">
@@ -333,9 +333,9 @@ function App() {
                     <i className="fa-brands fa-bootstrap me-3 text-[#702cf6] text-2xl"></i>
                     Bootstrap 5
                   </h2>
-                  <p className="text-gray-500">70%</p>
+                  <p className="text-gray-500">75%</p>
                 </div>
-                <span className="w-[70%] h-2 mt-2 bg-gradient-to-t from-blue-500 to-cyan-500 block rounded-md" />
+                <span className="w-[75%] h-2 mt-2 bg-gradient-to-t from-blue-500 to-cyan-500 block rounded-md" />
               </div>
               <div className="mt-8">
                 <div className="flex justify-between items-center">
@@ -383,9 +383,9 @@ function App() {
                     <i className="fa-brands fa-git-alt me-3 text-[#fc6d26] text-2xl"></i>
                     Git
                   </h2>
-                  <p className="text-gray-500">75%</p>
+                  <p className="text-gray-500">70%</p>
                 </div>
-                <span className="w-[75%] h-2 mt-2 bg-gradient-to-t from-blue-500 to-cyan-500 block rounded-md" />
+                <span className="w-[70%] h-2 mt-2 bg-gradient-to-t from-blue-500 to-cyan-500 block rounded-md" />
               </div>
             </div>
           </div>
