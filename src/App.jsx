@@ -7,6 +7,7 @@ import Elzero from "./assets/Elzero.png";
 import Leon from "./assets/Leon.png";
 import Redux from "./assets/redux-svgrepo-com.svg";
 import TypeScript from "./assets/typescript-icon-svgrepo-com.svg"
+import TailwindCSS from "./assets/tailwind-css-svgrepo-com.svg"
 import myPhoto from "./assets/myPhoto.png";
 import ArrowDown from "./assets/arrow-down.svg";
 import myCv from "./PDFs/Hakam aldeen Alkhadraa.pdf";
@@ -332,6 +333,16 @@ function App() {
                   <h2 className="font-semibold">
                     <i className="fa-brands fa-bootstrap me-3 text-[#702cf6] text-2xl"></i>
                     Bootstrap 5
+                  </h2>
+                  <p className="text-gray-500">85%</p>
+                </div>
+                <span className="w-[85%] h-2 mt-2 bg-gradient-to-t from-blue-500 to-cyan-500 block rounded-md" />
+              </div>
+              <div className="mt-8">
+                <div className="flex justify-between items-center">
+                  <h2 className="font-semibold">
+                  <img src={TailwindCSS} className="w-7 inline-block pb-2 me-3 " />
+                    Tailwind CSS
                   </h2>
                   <p className="text-gray-500">75%</p>
                 </div>
