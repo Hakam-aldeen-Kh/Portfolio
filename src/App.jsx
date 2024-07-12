@@ -6,8 +6,8 @@ import Bondi from "./assets/Bondi.png";
 import Elzero from "./assets/Elzero.png";
 import Leon from "./assets/Leon.png";
 import Redux from "./assets/redux-svgrepo-com.svg";
-import TypeScript from "./assets/typescript-icon-svgrepo-com.svg"
-import TailwindCSS from "./assets/tailwind-css-svgrepo-com.svg"
+import TypeScript from "./assets/typescript-icon-svgrepo-com.svg";
+import TailwindCSS from "./assets/tailwind-css-svgrepo-com.svg";
 import myPhoto from "./assets/myPhoto.png";
 import ArrowDown from "./assets/arrow-down.svg";
 import myCv from "./PDFs/Hakam aldeen Alkhadraa.pdf";
@@ -80,7 +80,7 @@ function App() {
         {/* Intro/Banner section */}
         <section>
           <div className="container m-auto px-4 pt-12 pb-12 sm:pt-20 flex flex-col sm:flex-row gap-6 text-center sm:text-left">
-            <div>
+            <div className=" w-full md:max-w-[60%]">
               <h2 className="font-bold text-4xl">
                 Hello, I'm Hakam Aldeen Alkhadraa
               </h2>
@@ -91,12 +91,15 @@ function App() {
               </div>
               <div>
                 <p className="mt-4 text-gray-400">
-                  I'm a frontend developer passionate about creating intuitive
-                  and visually appealing web experiences.
-                  <br /> With a keen eye for detail and a commitment to
-                  excellence,
-                  <br /> I specialize in turning design concepts into responsive
-                  and interactive websites.
+                  I am a Front-End Developer specializing in React JS, currently
+                  studying Information Technology Engineering at the Syrian
+                  Virtual University. I have strong skills in HTML, CSS,
+                  JavaScript, andmodern React libraries and tools. I excel in
+                  time management and thrive in collaborative teamenvironments.
+                  Passionate about creating user-friendly, responsive, and
+                  visually appealing webapplications, I am equipped to tackle
+                  complex problems and deliver high-quality
+                  solutionsefficiently.
                 </p>
                 <a
                   href={myCv}
@@ -140,12 +143,15 @@ function App() {
             <div className="flex flex-col sm:flex-row gap-10 mt-11">
               <div className="border border-gray-500 rounded-md p-5 flex-1">
                 <img src={Ecommerce} className="w-full h-[30vh]" />
-                <h3 className="text-2xl font-semibold mt-8">e-Commerce</h3>
+                <h3 className="text-2xl font-semibold mt-8">E-commerce</h3>
                 <p className="text-gray-400 text-sm mt-2">
-                  Responsive React Js App with APIs about e-Commerce with
-                  authentication system - wishlist for every user - cart allow you
-                  menage your cart - place order and display orders for every
-                  user.
+                  <i>Responsive React Js App with APIs about E-commerce</i>{" "}
+                  <br />
+                  • Offer many subjects for many years <br />
+                  • Display results and wrong, correct answers for every
+                  question <br />
+                  • The results and answers coming from the backend <br />•{" "}
+                  Automated corrected
                 </p>
                 <div className="flex justify-between gap-2 mt-12 items-end">
                   <a
@@ -172,8 +178,11 @@ function App() {
                 <img src={ExamGate} className="w-full h-[30vh]" />
                 <h3 className="text-2xl font-semibold mt-8">Exam Gate</h3>
                 <p className="text-gray-400 text-sm mt-2">
-                  Responsive Web Application Offers a Completed Automated Exam
-                  Work Experience with backend developer team
+                  <i>Exam Automated an Offers Application Web Responsive</i>
+                  • Offer many subjects for many years <br />
+                  • Display results and wrong, correct answers for every
+                  question <br /> • The results and answers coming from the
+                  backend <br /> • Automated corrected
                 </p>
                 <div className="flex mt-5 gap-2">
                   <a
@@ -341,7 +350,10 @@ function App() {
               <div className="mt-8">
                 <div className="flex justify-between items-center">
                   <h2 className="font-semibold">
-                  <img src={TailwindCSS} className="w-7 inline-block pb-2 me-3 " />
+                    <img
+                      src={TailwindCSS}
+                      className="w-7 inline-block pb-2 me-3 "
+                    />
                     Tailwind CSS
                   </h2>
                   <p className="text-gray-500">75%</p>
@@ -361,7 +373,10 @@ function App() {
               <div className="mt-8">
                 <div className="flex justify-between items-center">
                   <h2 className="font-semibold">
-                  <img src={TypeScript} className="w-6 inline-block pb-2 me-3 " />
+                    <img
+                      src={TypeScript}
+                      className="w-6 inline-block pb-2 me-3 "
+                    />
                     TypeScript
                   </h2>
                   <p className="text-gray-500">70%</p>
